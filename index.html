@@ -322,27 +322,14 @@
         
         /* Hero Section - GÜNCELLENDİ */
         .hero {
-            height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://www.kahtataksinumarasi.com/images/taksi.webp');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            color: white;
-            position: relative;
-        }
-        
-        .hero::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4); /* Hafif siyah gölge */
-            z-index: 1;
-        }
+    height: 100vh;
+    background: url('https://www.kahtataksinumarasi.com/images/taksi.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
         
         .hero-content {
             max-width: 900px;
