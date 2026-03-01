@@ -806,6 +806,89 @@
                 box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
             }
         }
+        .modern-footer {
+    background: linear-gradient(135deg, #000000 0%, #111111 100%);
+    color: #ddd;
+    padding: 70px 0 30px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+.footer-col h4 {
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.footer-logo span {
+    color: #FFD700;
+}
+
+.footer-col p,
+.footer-col a {
+    color: #bbb;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-col a:hover {
+    color: #FFD700;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-badges span {
+    display: inline-block;
+    background: rgba(255,215,0,0.1);
+    padding: 6px 12px;
+    border-radius: 20px;
+    margin: 5px 5px 0 0;
+    font-size: 12px;
+}
+
+.footer-cta {
+    text-align: center;
+}
+
+.footer-call-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #2196F3, #1976D2);
+    padding: 14px 25px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 700;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+
+.footer-call-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.footer-bottom {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+}
         
         .whatsapp-tooltip::after {
             content: '';
@@ -1366,40 +1449,71 @@
         </div>
     </section>
     
-   <!-- Footer -->
-<footer>
-    <div class="container">
-        
-        <div class="footer-logo">Kahta <span>Taksi</span></div>
+   <!-- Modern Footer -->
+<footer class="modern-footer">
+    <div class="container footer-grid">
 
-        <p>
-            Kahta taksi çağır hizmeti ile 7/24 güvenli ulaşım.
-            Kahta merkez, hastane, otogar ve tüm mahallelere hızlı taksi servisi sunuyoruz.
-        </p>
+        <!-- Marka Alanı -->
+        <div class="footer-col">
+            <h3 class="footer-logo">Kahta <span>Taksi</span></h3>
+            <p>
+                Kahta ve çevresinde 7/24 güvenli, hızlı ve konforlu taksi hizmeti.
+                Şehir içi ve şehirler arası ulaşım çözümleri.
+            </p>
 
-        <div class="footer-contact">
+            <div class="footer-badges">
+                <span>✔ 7/24 Açık</span>
+                <span>✔ Hızlı Ulaşım</span>
+                <span>✔ Güvenli Sürüş</span>
+            </div>
+        </div>
+
+        <!-- İletişim -->
+        <div class="footer-col">
+            <h4>İletişim</h4>
             <p><strong>Telefon:</strong> 
                 <a href="tel:05357147133">0535 714 71 33</a>
             </p>
-            <p><strong>Hizmet Bölgesi:</strong> Kahta / Adıyaman</p>
-            <p><strong>Çalışma Saatleri:</strong> 7/24 Açık</p>
-        </div>
-
-        <div class="footer-credit">
-            <p>
-                Web tasarım ve dijital reklam danışmanlığı: 
-                <a href="https://www.umutyanardag.com/" 
-                   target="_blank" 
-                   rel="noopener noreferrer">
-                   Umut Yanardağ – Google Ads Uzmanı
+            <p><strong>WhatsApp:</strong> 
+                <a href="https://wa.me/905357147133" target="_blank">
+                    Mesaj Gönder
                 </a>
             </p>
+            <p><strong>Bölge:</strong> Kahta / Adıyaman</p>
         </div>
 
-        <div class="footer-copyright">
-            © 2026 Kahta Taksi - 0535 714 71 33. Tüm hakları saklıdır.
+        <!-- Hizmetler -->
+        <div class="footer-col">
+            <h4>Hizmetler</h4>
+            <ul>
+                <li><a href="#services">Şehir İçi Taksi</a></li>
+                <li><a href="#services">Şehirler Arası Taksi</a></li>
+                <li><a href="#services">Havaalanı Transferi</a></li>
+                <li><a href="#services">Turistik Gezi</a></li>
+            </ul>
         </div>
 
+        <!-- Hızlı Çağrı -->
+        <div class="footer-col footer-cta">
+            <h4>Hemen Taksi Çağır</h4>
+            <a href="tel:05357147133" class="footer-call-btn">
+                📞 0535 714 71 33
+            </a>
+            <p>Ortalama varış süresi: <strong>5-10 dakika</strong></p>
+        </div>
+
+    </div>
+
+    <!-- Alt Çizgi -->
+    <div class="footer-bottom">
+        © 2026 Kahta Taksi | Tüm hakları saklıdır.
+        <br>
+        Web Tasarım & Dijital Reklam:
+        <a href="https://www.umutyanardag.com/" 
+           target="_blank" 
+           rel="noopener noreferrer">
+           Umut Yanardağ – Google Ads Uzmanı
+        </a>
     </div>
 </footer>
 
